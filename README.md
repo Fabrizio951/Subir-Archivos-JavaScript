@@ -1,5 +1,5 @@
 # Subir-Archivos-JavaScript
-Trabajao realizado por:
+Trabajo realizado por:
 
 Fabrizio Santiago Zuñiga Arivilca
 
