@@ -1,0 +1,67 @@
+
+body {
+    background: radial-gradient(at bottom right, #351b1b, #0f0909);
+    overflow: hidden;
+}
+
+.snow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+    animation: fall 10s linear infinite;
+    animation-delay: 0s;
+}
+
+.snow-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+    animation: fall-ball 10s linear infinite;
+    top: 0;
+    right: 0;
+}
+
+.snow:nth-child(2) {
+    opacity: 0.5;
+    transform: translate(20vw, -10px) scale(0.5);
+}
+
+.snow:nth-child(3) {
+    opacity: 0.3;
+    transform: translate(70vw, 35vh) scale(0.2);
+}
+
+.snow:nth-child(4) {
+    opacity: 1;
+    transform: translate(90vw, 10vh) scale(0.7);
+}
+
+.snow:nth-child(5) {
+    opacity: 1;
+    transform: translate(10vw, 20vh) scale(0.7);
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes fall-ball {
+    0% {
+        transform: translate(10vw, -20px);
+    }
+    100% {
+        transform: translate(10vw, 100vh);
+    }
+}
+
